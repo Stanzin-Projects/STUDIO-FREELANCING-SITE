@@ -41,12 +41,12 @@ export default function Navbar() {
       <Link to="/" className="brand" aria-label="Nakpo Studio — home">
         <img
           className="brand-logo"
-          src="/images/logo.svg"
-          alt="Nakpo Studio logo"
+          src="/images/nakpo.png"
+          alt="Nakpo logo"
         />
       </Link>
 
-      <div className="collapse navbar-collapse justify-content-end">
+      <div className="navbar-collapse justify-content-end">
         <ul className="navbar-nav">
           {NAV_ITEMS.map((item) => (
             <li

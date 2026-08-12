@@ -254,8 +254,10 @@ body.loaded .hero-large .arrow {
 }
 
 .brand-logo {
-  width: 120px;
+  width: 110px;
   height: auto;
+  display: block;
+  object-fit: contain;
 }
 
 .project-page {
@@ -325,10 +327,12 @@ body.loaded .hero-large .arrow {
 
 .navbar .navbar-nav {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   list-style: none;
   margin: 0;
   padding: 0;
+  gap: 18px;
 }
 
 .justify-content-end {
@@ -339,15 +343,14 @@ body.loaded .hero-large .arrow {
   justify-content: center;
 }
 
-/* desktop nav is hidden below sm, like Bootstrap's navbar-expand-sm */
-.collapse.navbar-collapse {
-  display: none;
+/* always display nav links so clients can navigate easily */
+.navbar-collapse {
+  display: flex;
+  visibility: visible;
 }
 
-@media (min-width: 576px) {
-  .collapse.navbar-collapse {
-    display: flex;
-  }
+#mobile-nav-toggle {
+  display: none;
 }
 
 .navbar .nav-link {

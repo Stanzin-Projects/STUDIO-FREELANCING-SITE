@@ -174,6 +174,20 @@ body.loaded .hero-large .arrow {
   }
 }
 
+@media (max-width: 767px) {
+  .hero-logo .logo-name {
+    font-size: 34px;
+    letter-spacing: 0.18em;
+    text-indent: 0.18em;
+  }
+
+  .hero-logo .logo-tag {
+    font-size: 10px;
+    letter-spacing: 0.25em;
+    text-indent: 0.25em;
+  }
+}
+
 /* scroll-down arrow */
 .hero-large .arrow {
   position: absolute;
@@ -245,19 +259,45 @@ body.loaded .hero-large .arrow {
   }
 }
 
+@media (max-width: 575px) {
+  .navbar {
+    padding: 0 20px;
+    height: 72px;
+  }
+
+  .navbar .brand {
+    margin-left: 0;
+  }
+
+  .brand-logo {
+    width: 90px;
+    height: 52px;
+  }
+
+  .navbar-collapse {
+    display: none;
+  }
+
+  #mobile-nav-toggle {
+    display: flex;
+  }
+}
+
 .navbar .brand {
   border: 0;
   padding: 0;
   display: inline-flex;
   align-items: center;
   line-height: 1;
+  background: transparent;
 }
 
 .brand-logo {
   width: 110px;
-  height: auto;
+  height: 80px;
   display: block;
   object-fit: contain;
+  background: transparent;
 }
 
 .project-page {
@@ -398,6 +438,25 @@ body.loaded .hero-large .arrow {
 @media (min-width: 576px) {
   #mobile-nav-toggle {
     display: none;
+  }
+}
+
+@media (max-width: 575px) {
+  .mobile-overlay {
+    padding: 12px 20px 28px;
+  }
+
+  .mobile-overlay-header {
+    align-items: center;
+  }
+
+  .mobile-overlay .nav-link {
+    font-size: 30px;
+    line-height: 42px;
+  }
+
+  .mobile-overlay-contact {
+    font-size: 13px;
   }
 }
 
@@ -674,6 +733,16 @@ body.loaded .hero-large .arrow {
   }
 }
 
+@media (max-width: 767px) {
+  .work-cover h2 {
+    font-size: 24px;
+  }
+
+  .work-cover h3 {
+    font-size: 13px;
+  }
+}
+
 .work-cover h2 {
   padding: 0 10px;
   font-size: 28px;
@@ -752,6 +821,21 @@ body.loaded .hero-large .arrow {
   .footer {
     font-size: 16px;
     text-align: center;
+  }
+}
+
+@media (max-width: 575px) {
+  .footer {
+    padding: 72px 20px 64px;
+    text-align: left;
+  }
+
+  .footer .logo-footer,
+  .footer .address,
+  .footer .contact,
+  .footer .social {
+    align-items: flex-start;
+    text-align: left;
   }
 }
 

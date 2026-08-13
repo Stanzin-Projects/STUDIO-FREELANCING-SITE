@@ -40,7 +40,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-10 lg:gap-y-0">
           <div className="col-sm-12 col-md-12 col-lg-3">
             <div className="logo-footer">
-              <span className="brand-footer">Nakpo Studio</span>
+              <span className="brand-footer">VisualLuxe</span>
             </div>
           </div>
 
@@ -74,8 +74,8 @@ export default function Footer() {
                   +00 000 000 000
                 </a>
                 <br />
-                <a href="mailto:hello@nakpo.studio" className="animated-link">
-                  hello@nakpo.studio
+                <a href="mailto:hello@visualluxe.studio" className="animated-link">
+                  hello@visualluxe.studio
                 </a>
               </div>
             </div>
@@ -94,7 +94,7 @@ export default function Footer() {
               </div>
               <div className="smallprint">
                 <span className="copyright">
-                  © {year} Nakpo Studio - Design &amp; Architecture
+                  © {year} VisualLuxe - Design &amp; Architecture
                 </span>
               </div>
             </div>

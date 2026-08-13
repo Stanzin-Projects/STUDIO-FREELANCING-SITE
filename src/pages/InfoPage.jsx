@@ -25,7 +25,7 @@ export default function InfoPage() {
             <div className="col-lg-8 scroll-reveal">
               <h1>About Us</h1>
               <p style={{ textAlign: 'center' }}>
-                Nakpo Studio is a modern design studio. We execute projects all
+                VisualLuxe is a modern design studio. We execute projects all
                 over the world. Each meeting with a client for us is an
                 opportunity to find out their preferences, produce unique ideas
                 and apply that knowledge to our project, so that the results are

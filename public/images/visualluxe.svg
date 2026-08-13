@@ -1,0 +1,26 @@
+<svg viewBox="0 0 240 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Poppins:wght@600&display=swap');
+    </style>
+  </defs>
+  
+  <!-- Logo Mark (Modern geometric design) -->
+  <g id="logo-mark">
+    <!-- Gold accent line -->
+    <line x1="0" y1="8" x2="20" y2="8" stroke="#d4af37" stroke-width="3" stroke-linecap="round"/>
+    <!-- Geometric shapes -->
+    <rect x="0" y="16" width="8" height="24" fill="#ffffff" opacity="0.95"/>
+    <rect x="10" y="12" width="8" height="28" fill="#ffffff" opacity="0.95"/>
+    <rect x="20" y="18" width="8" height="22" fill="#ffffff" opacity="0.95"/>
+  </g>
+  
+  <!-- Main Text -->
+  <text x="36" y="38" font-family="Cormorant Garamond, serif" font-size="32" font-weight="700" fill="#ffffff" letter-spacing="1.5">VISUALLUXE</text>
+  
+  <!-- Divider line -->
+  <line x1="36" y1="48" x2="200" y2="48" stroke="#ffffff" stroke-width="1" opacity="0.3"/>
+  
+  <!-- Subtext -->
+  <text x="36" y="68" font-family="Poppins, sans-serif" font-size="11" font-weight="600" fill="#b8a48f" letter-spacing="1.2">DESIGN &amp; ARCHITECTURE</text>
+</svg>

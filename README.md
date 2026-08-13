@@ -1,8 +1,8 @@
-# Nakpo Studio — Design & Architecture
+# VisualLuxe — Design & Architecture
 
 A single-page portfolio website built with **React + Vite + Tailwind CSS**,
 cloned from the design of [micasa-design.com](https://www.micasa-design.com/)
-and rebranded for **Nakpo Studio** as a freelancing portfolio.
+and rebranded for **VisualLuxe** as a freelancing portfolio.
 
 ## Features (mirroring the original site)
 

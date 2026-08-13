@@ -38,11 +38,11 @@ export default function Navbar() {
 
   return (
     <nav id="navbar" className="navbar">
-      <Link to="/" className="brand" aria-label="Nakpo Studio — home">
+      <Link to="/" className="brand" aria-label="VisualLuxe — home">
         <img
-          className="brand-logo"
-          src="/images/nakpo.png"
-          alt="Nakpo logo"
+          className="brand-logo scale-125 md:*:scale-105"
+          src="public\images\visualluxe.png"
+          alt="VisualLuxe logo"
         />
       </Link>
 
@@ -117,8 +117,8 @@ export default function Navbar() {
               +00 000 000 000
             </a>
             <br />
-            <a href="mailto:hello@nakpo.studio" className="animated-link">
-              hello@nakpo.studio
+            <a href="mailto:hello@visualluxe.studio" className="animated-link">
+              hello@visualluxe.studio
             </a>
           </div>
         </div>

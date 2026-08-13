@@ -20,14 +20,14 @@ export default function Hero({ onArrowClick } = {}) {
           src="https://player.vimeo.com/video/796965971?background=1"
           frameBorder="0"
           allow="autoplay"
-          title="Nakpo Studio — design & architecture showreel"
+          title="VisualLuxe — design & architecture showreel"
         />
       </div>
 
       <div className="hero-cover">
         <div className="logo hero-logo">
-          <span className="logo-name">Nakpo Studio</span>
-          <span className="logo-tag">Design &amp; Architecture</span>
+          <span className="logo-name">VISUAL-lUXE</span>
+          <span className="logo-tag">Design &amp; Architecture & 3d Rendering </span> 
         </div>
       </div>
 

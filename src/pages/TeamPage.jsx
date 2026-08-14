@@ -10,7 +10,8 @@ const TEAM = [
         name: 'Lopsang Ringchen',
         role: 'Founder',
         initials: 'LR',
-        photo: '/VISUALLUXE.png',
+        photo: '/images/nakpo-profile.jpeg',
+        bwHover: true,
       },
       {
         name: 'Your Name',
@@ -131,7 +132,7 @@ const SOCIAL_PATHS = {
 
 function MemberCard({ member }) {
   return (
-    <div className="hover-overlay box16">
+    <div className={`hover-overlay box16${member.bwHover ? ' bw-hover' : ''}`}>
       {member.photo ? (
         <img
           src={member.photo}

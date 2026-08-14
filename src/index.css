@@ -57,13 +57,109 @@ a:visited {
   height: 100%;
 }
 
-/* ---------- page reveal on load ---------- */
+/* ---------- intro splash → page reveal on load ---------- */
+body.intro-active {
+  overflow: hidden;
+}
+
 .all {
   opacity: 0;
 }
 
 body.loaded .all {
   opacity: 1 !important;
+}
+
+.intro {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  transition: opacity 0.8s ease;
+}
+
+.intro-leave {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.intro-logo {
+  color: #fff;
+  text-align: center;
+}
+
+.intro-name {
+  display: block;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-weight: 500;
+  font-size: 46px;
+  line-height: 1;
+  letter-spacing: 0.3em;
+  text-indent: 0.3em;
+  text-transform: uppercase;
+}
+
+.intro-char {
+  display: inline-block;
+  opacity: 0;
+  animation: intro-rise 0.8s ease forwards;
+}
+
+.intro-tag {
+  display: block;
+  margin-top: 14px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 1;
+  letter-spacing: 0.42em;
+  text-indent: 0.42em;
+  text-transform: uppercase;
+  color: #f4f5f5;
+}
+
+.intro-word {
+  display: inline-block;
+  opacity: 0;
+  animation: intro-rise 0.8s ease forwards;
+}
+
+@keyframes intro-rise {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (min-width: 768px) {
+  .intro-name {
+    font-size: 60px;
+  }
+
+  .intro-tag {
+    font-size: 13px;
+    margin-top: 18px;
+  }
+}
+
+@media (max-width: 767px) {
+  .intro-name {
+    font-size: 34px;
+    letter-spacing: 0.18em;
+    text-indent: 0.18em;
+  }
+
+  .intro-tag {
+    font-size: 10px;
+    letter-spacing: 0.25em;
+  }
 }
 
 /* ============================================================
@@ -129,7 +225,7 @@ body.loaded .hero-large .hero-cover h1 {
 
 body.loaded .hero-large .arrow {
   transition: opacity 2s ease-in;
-  transition-delay: 2s;
+  transition-delay: 0.3s;
   opacity: 1 !important;
 }
 
@@ -1204,6 +1300,16 @@ body.loaded .hero-large .arrow {
   width: 100%;
   height: auto;
   display: block;
+}
+
+/* black-and-white on hover (bw-hover cards) */
+.box16.bw-hover img {
+  filter: grayscale(0);
+  transition: filter 0.5s ease;
+}
+
+.box16.bw-hover:hover img {
+  filter: grayscale(1);
 }
 
 .box16 .box-content {

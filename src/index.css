@@ -440,6 +440,14 @@ body.loaded .hero-large .arrow {
   color: #8b8c8c;
 }
 
+.project-description {
+  max-width: 680px;
+  margin: 0 0 8px;
+  font-size: 20px;
+  line-height: 1.6;
+  color: #5b5b5b;
+}
+
 .project-meta {
   display: grid;
   gap: 12px;

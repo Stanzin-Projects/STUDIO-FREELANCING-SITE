@@ -14,17 +14,17 @@ const TEAM = [
         bwHover: true,
       },
       {
-        name: 'Your Name',
+        name: 'STUDIO-PARTNER',
         role: 'Co-Founder',
         initials: 'YN',
-        photo: '/Assets/VISUALLUXE.png',
+        photo: '/images/partner-profile.jpeg',
       },
-      {
-        name: 'Your Name',
-        role: 'Managing Director',
-        initials: 'YN',
-        photo: '/Assets/VISUALLUXE.png',
-      },
+      // {
+      //   name: 'Your Name',
+      //   role: 'Managing Director',
+      //   initials: 'YN',
+      //   photo: '/Assets/VISUALLUXE.png',
+      // },
     ],
   },
   {

@@ -36,13 +36,9 @@ export default function ProjectPage() {
         <div className="project-content">
           <h1>{project.title}</h1>
           <p className="project-category">{project.category}</p>
-          <p>
-            Explore this project in detail. Use the browser back button or the
-            portfolio link to return to the homepage.
-          </p>
+          <p className="project-description">{project.description}</p>
           <div className="project-meta">
             <span>Category: {project.category}</span>
-            <span>Project slug: {project.slug}</span>
           </div>
         </div>
       </div>

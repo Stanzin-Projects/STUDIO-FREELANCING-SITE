@@ -19,12 +19,12 @@ const TEAM = [
         initials: 'YN',
         photo: '/images/partner-profile.jpeg',
       },
-      // {
-      //   name: 'Your Name',
-      //   role: 'Managing Director',
-      //   initials: 'YN',
-      //   photo: '/Assets/VISUALLUXE.png',
-      // },
+      {
+        name: 'Amreen ali',
+        role: 'Managing Director',
+        initials: 'YN',
+        photo: '/images/Amreen ali.jpeg',
+      },
     ],
   },
   {

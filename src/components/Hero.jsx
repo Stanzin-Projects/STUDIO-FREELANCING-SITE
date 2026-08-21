@@ -15,13 +15,16 @@ export default function Hero({ onArrowClick } = {}) {
   return (
     <header className="hero-large">
       <div className="iframe-wrapper">
-        <iframe
+        <video
           className="hero-iframe"
-          src="https://player.vimeo.com/video/796965971?background=1"
-          frameBorder="0"
-          allow="autoplay"
-          title="VisualLuxe — design & architecture showreel"
-        />
+          autoPlay
+          loop
+          muted
+          playsInline
+          poster="/images/hero-poster.jpg"
+        >
+          <source src="/visualluxe-video-homepage.mp4" type="video/mp4" />
+        </video>
       </div>
 
       <div className="hero-cover">

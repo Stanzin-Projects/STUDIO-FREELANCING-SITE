@@ -179,11 +179,12 @@ body.loaded .all {
   overflow: hidden;
 }
 
-.hero-large .iframe-wrapper iframe {
+.hero-large .iframe-wrapper iframe,
+.hero-large .iframe-wrapper video {
   box-sizing: border-box;
   height: 56.25vw;
   left: 50%;
-  opacity: 0.4;
+  opacity: 0.85;
   min-height: 100%;
   min-width: 100%;
   transform: translate(-50%, -50%);
@@ -191,6 +192,7 @@ body.loaded .all {
   top: 50%;
   width: 177.77777778vh;
   border: 0;
+  object-fit: cover;
 }
 
 .hero-cover {

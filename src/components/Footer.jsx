@@ -74,8 +74,8 @@ export default function Footer() {
                   +00 000 000 000
                 </a>
                 <br />
-                <a href="mailto:hello@visualluxe.studio" className="animated-link">
-                  hello@visualluxe.studio
+                <a href="mailto:Visualluxe7@gmail.com" className="animated-link">
+                  Visualluxe7@gmail.com
                 </a>
               </div>
             </div>

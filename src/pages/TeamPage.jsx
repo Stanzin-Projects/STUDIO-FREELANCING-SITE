@@ -8,16 +8,16 @@ const TEAM = [
     members: [
       {
         name: 'Lopsang Ringchen',
-        role: 'Founder',
+        role: 'Senior Interior Designer & Architect',
         initials: 'LR',
         photo: '/images/nakpo-profile.jpeg',
         bwHover: true,
       },
       {
-        name: 'STUDIO-PARTNER',
+        name: 'Md Wasim Akaram',
         role: 'Co-Founder',
         initials: 'YN',
-        photo: '/images/partner-profile.jpeg',
+        photo: '/images/Md Wasim Akaram.jpeg',
       },
       {
         name: 'Amreen ali',

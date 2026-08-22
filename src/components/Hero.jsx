@@ -28,10 +28,7 @@ export default function Hero({ onArrowClick } = {}) {
       </div>
 
       <div className="hero-cover">
-        <div className="logo hero-logo">
-          <span className="logo-name">VISUAL-lUXE</span>
-          <span className="logo-tag">Design &amp; Architecture & 3d Rendering </span> 
-        </div>
+        <img src="/images/visualluxe.png" alt="VisualLuxe logo" className="hero-logo-img" />
       </div>
 
       <a

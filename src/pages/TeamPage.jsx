@@ -4,11 +4,11 @@ import { useScrollReveal } from '../hooks/useScrollEffects'
 // Images inside /public can be referenced directly using /images/filename
 const TEAM = [
   {
-    title: 'CEO',
+   
     members: [
       {
         name: 'Lopsang Ringchen',
-        role: 'Senior Interior Designer & Architect',
+        role: ' Architect',
         initials: 'LR',
         photo: '/images/nakpo-profile.jpeg',
         bwHover: true,
@@ -21,7 +21,7 @@ const TEAM = [
       },
       {
         name: 'Amreen ali',
-        role: 'Managing Director',
+        role: 'Interior Designer',
         initials: 'YN',
         photo: '/images/Amreen ali.jpeg',
       },

@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 
 // Intro splash: brand text animates in over a black screen, then the
 // whole website fades in underneath (see App.jsx for the handoff timing).
-const WORDMARK = 'VISUAL-LUXE'
+const WORDMARK = 'VISUALLUXE'
 const TAGLINE = 'Design & Architecture & 3d Rendering'
 
 export default function Intro({ onDone }) {

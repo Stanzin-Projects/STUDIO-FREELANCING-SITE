@@ -37,10 +37,20 @@ export default function ProjectPage() {
           <h1>{project.title}</h1>
           <p className="project-category">{project.category}</p>
           <p className="project-description">{project.description}</p>
-          <div className="project-meta">
-            <span>Category: {project.category}</span>
-          </div>
         </div>
+
+        {project.images && project.images.length > 0 && (
+          <div className="project-gallery">
+            <h2 className="gallery-title">Gallery</h2>
+            <div className="gallery-grid">
+              {project.images.map((img, i) => (
+                <div key={i} className="gallery-item">
+                  <img src={img} alt={`${project.title} — photo ${i + 1}`} loading="lazy" />
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
       </div>
     </div>
   )

@@ -233,16 +233,16 @@ body.loaded .hero-large .arrow {
 
 /* Hero logo image overlay */
 .hero-logo-img {
-  max-width: 320px;
-  width: 60%;
+  max-width: 520px;
+  width: 75%;
   height: auto;
   pointer-events: none;
 }
 
 @media (max-width: 767px) {
   .hero-logo-img {
-    max-width: 200px;
-    width: 50%;
+    max-width: 300px;
+    width: 65%;
   }
 }
 

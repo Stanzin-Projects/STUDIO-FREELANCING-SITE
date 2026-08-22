@@ -26,32 +26,57 @@ export default function ProjectPage() {
 
   return (
     <div className="project-page">
-      <div className="project-page-inner">
-        <Link to="/" className="project-back animated-link">
-          ← Back to portfolio
-        </Link>
-        <div className="project-hero">
-          <img src={project.image} alt={`${project.title} — ${project.category}`} />
-        </div>
-        <div className="project-content">
-          <h1>{project.title}</h1>
-          <p className="project-category">{project.category}</p>
-          <p className="project-description">{project.description}</p>
-        </div>
-
-        {project.images && project.images.length > 0 && (
-          <div className="project-gallery">
-            <h2 className="gallery-title">Gallery</h2>
-            <div className="gallery-grid">
-              {project.images.map((img, i) => (
-                <div key={i} className="gallery-item">
-                  <img src={img} alt={`${project.title} — photo ${i + 1}`} loading="lazy" />
-                </div>
-              ))}
-            </div>
-          </div>
-        )}
+      {/* Full-width hero image */}
+      <div className="project-hero-new">
+        <img src={project.image} alt={`${project.title} — ${project.category}`} />
       </div>
+
+      {/* Project info section */}
+      <div className="project-info-section">
+        <div className="project-info-inner">
+          <Link to="/" className="project-back-new animated-link">
+            ← Back to portfolio
+          </Link>
+          <h1 className="project-title-new">{project.title}</h1>
+          <p className="project-category-new">{project.category}</p>
+          {project.location && (
+            <p className="project-location-new">{project.location}</p>
+          )}
+        </div>
+      </div>
+
+      {/* Divider */}
+      <div className="project-divider" />
+
+      {/* Gallery section */}
+      {project.images && project.images.length > 0 && (
+        <div className="project-gallery-new">
+          <div className="gallery-bento">
+            {project.images.map((img, i) => {
+              // Create a bento layout pattern:
+              // Even indices 0,2,4... in pairs = 2-col rows
+              // Odd single images = full-width
+              const posInPair = i % 4
+              let className = 'bento-item'
+              if (posInPair === 0 || posInPair === 1) {
+                className += ' bento-half'
+              } else {
+                className += ' bento-full'
+              }
+
+              return (
+                <div key={i} className={className}>
+                  <img
+                    src={img}
+                    alt={`${project.title} — photo ${i + 1}`}
+                    loading="lazy"
+                  />
+                </div>
+              )
+            })}
+          </div>
+        </div>
+      )}
     </div>
   )
 }

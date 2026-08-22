@@ -416,64 +416,175 @@ body.loaded .hero-large .arrow {
   max-width: 100%;
 }
 
+/* ========== PROJECT PAGE — REDESIGNED ========== */
 .project-page {
-  padding-top: 120px;
   min-height: 100vh;
-  background-color: #f4f5f5;
+  background: #fff;
 }
 
-.project-page-inner {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 48px 24px;
-}
-
-.project-back {
-  display: inline-block;
-  margin-bottom: 32px;
-  font-size: 14px;
-}
-
-.project-hero img {
+/* Full-width hero image */
+.project-hero-new {
   width: 100%;
-  height: auto;
+  overflow: hidden;
+}
+
+.project-hero-new img {
+  width: 100%;
+  height: 70vh;
+  min-height: 400px;
+  object-fit: cover;
   display: block;
-  border-radius: 8px;
-  margin-bottom: 32px;
 }
 
-.project-content h1 {
-  font-size: 42px;
-  margin: 0 0 16px;
+/* Project info section */
+.project-info-section {
+  background: #fff;
+  padding: 48px 0 40px;
 }
 
-.project-category {
+.project-info-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 48px;
+}
+
+.project-back-new {
   display: inline-block;
-  margin-bottom: 16px;
+  margin-bottom: 24px;
+  font-size: 13px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
+
+.project-back-new:hover {
+  opacity: 1;
+}
+
+.project-title-new {
+  font-size: 48px;
+  font-weight: 400;
+  margin: 0 0 12px;
+  color: #1a1a1a;
+  letter-spacing: -0.02em;
+}
+
+.project-category-new {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  color: #888;
+  margin: 0 0 8px;
+  letter-spacing: 0.02em;
+}
+
+.project-location-new {
   font-family: 'Poppins', sans-serif;
   font-size: 14px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: #8b8c8c;
+  color: #b0b0b0;
+  margin: 0;
+  letter-spacing: 0.02em;
 }
 
-.project-description {
-  max-width: 680px;
-  margin: 0 0 8px;
-  font-size: 20px;
-  line-height: 1.6;
-  color: #5b5b5b;
+/* Divider */
+.project-divider {
+  max-width: 1100px;
+  margin: 0 auto;
+  border-bottom: 1px solid #e0e0e0;
 }
 
-.project-meta {
+/* Gallery section */
+.project-gallery-new {
+  background: #f5f6f6;
+  padding: 0;
+}
+
+.gallery-bento {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.bento-item {
+  overflow: hidden;
+  background: #e8e9ea;
+}
+
+.bento-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s ease;
+}
+
+.bento-item img:hover {
+  transform: scale(1.02);
+}
+
+/* Two-column row */
+.bento-half {
+  display: inline-block;
+  width: calc(50% - 12px);
+  aspect-ratio: 16 / 10;
+  vertical-align: top;
+}
+
+/* Pair rows: wrap two halves side by side */
+.gallery-bento {
   display: grid;
-  gap: 12px;
-  margin-top: 28px;
-  font-family: 'Poppins', sans-serif;
-  color: #5b5b5b;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
-/* Project gallery */
+/* Full-width item spans both columns */
+.bento-full {
+  grid-column: 1 / -1;
+  aspect-ratio: 16 / 9;
+}
+
+/* Make half items maintain aspect ratio */
+.bento-half {
+  aspect-ratio: 16 / 10;
+}
+
+/* Fallback for odd number of half items */
+.bento-half:only-child {
+  grid-column: 1 / -1;
+  aspect-ratio: 16 / 9;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .project-hero-new img {
+    height: 50vh;
+  }
+
+  .project-info-inner {
+    padding: 0 24px;
+  }
+
+  .project-title-new {
+    font-size: 32px;
+  }
+
+  .gallery-bento {
+    grid-template-columns: 1fr;
+    padding: 0 16px 24px;
+  }
+
+  .bento-half {
+    grid-column: 1 / -1;
+    aspect-ratio: 16 / 10;
+  }
+}
+
+/* Old gallery styles (kept as fallback) */
 .project-gallery {
   margin-top: 48px;
 }

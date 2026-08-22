@@ -10,6 +10,7 @@ export const projects = [
   {
     title: 'Bangalore Residence',
     category: 'Interior Design',
+    location: 'Bangalore, India',
     span: 8,
     shadow: true,
     delay: false,
@@ -34,6 +35,7 @@ export const projects = [
   {
     title: 'Master Bedroom Suite',
     category: 'Bedroom Design',
+    location: 'Mumbai, India',
     span: 4,
     shadow: false,
     delay: true,
@@ -53,6 +55,7 @@ export const projects = [
   {
     title: 'Goa Villa',
     category: 'Residential Design',
+    location: 'Goa, India',
     span: 8,
     shadow: false,
     delay: false,
@@ -74,6 +77,7 @@ export const projects = [
   {
     title: 'Living Area',
     category: 'Interior Design',
+    location: 'Delhi, India',
     span: 4,
     shadow: true,
     delay: true,
@@ -91,6 +95,7 @@ export const projects = [
   {
     title: 'Noida Residence',
     category: 'Interior Design',
+    location: 'Noida, India',
     span: 6,
     shadow: true,
     delay: false,
